@@ -25,8 +25,12 @@ public class sqrt {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		sqrt test = new sqrt();
-		System.out.println(test.calSqrt(1000));
+		//sqrt test = new sqrt();
+		//System.out.println(test.calSqrt(1000));
+		
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		
 	}
 
 }
