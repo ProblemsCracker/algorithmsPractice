@@ -1,6 +1,7 @@
 package algorithmsPractice;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CasualPractice {
 
@@ -12,9 +13,19 @@ public class CasualPractice {
 		
 		int[] test = {2,3,1};
 		
-		Arrays.sort(test, 1, 3);
+		List<Integer> testList = new ArrayList<>();
 		
-		System.out.println(test[2]);
+		testList.add(1);
+		testList.add(1);
+		testList.add(1);
+		testList.add(1);
+		testList.add(1);
+		
+		//can't use changing size in for loop
+		for(int i = 0; i < testList.size(); i++) { 
+			testList.add(1);
+			System.out.println(testList.size());
+		}
 		
 	}
 
