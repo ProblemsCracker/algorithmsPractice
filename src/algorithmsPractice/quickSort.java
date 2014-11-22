@@ -1,4 +1,4 @@
-package leetCode;
+package algorithmsPractice;
 
 public class quickSort {
 

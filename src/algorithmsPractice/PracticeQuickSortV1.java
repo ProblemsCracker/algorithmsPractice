@@ -2,15 +2,17 @@ package algorithmsPractice;
 
 public class PracticeQuickSortV1 {
 
-	static int partition(int[] num, int target, int start, int end) {
-		while(start < end) {
-			while(start <= end && num[start] < target) {
+	static int partition(int[] num, int start, int end) {
+		int mid = (start + end) / 2;
+		int target = num[mid];
+		while(start <= end) {//!!!!!!!
+			while(num[start] < target) {
 				start++;
 			}
-			while(end >= start && num[end] > target) {
+			while(num[end] > target) {
 				end--;
 			}
-			if(start < end) {
+			if(start <= end) {//!!!!!!!
 				int tmp = num[start];
 				num[start] = num[end];
 				num[end] = tmp;
@@ -24,12 +26,11 @@ public class PracticeQuickSortV1 {
 	
 	static void quickSort(int[] num, int start, int end) {
 		if(start >= end) return;
-		int mid = (start + end) / 2;
-		int index = partition(num, num[mid], start, end);
-		if(start < index)
-			quickSort(num, start, index);
-		if(index < end)
-			quickSort(num, index + 1, end);
+		int index = partition(num, start, end);
+		if(start < index - 1)//!!!!!
+			quickSort(num, start, index - 1);
+		if(index < end)//!!!!!!!
+			quickSort(num, index, end);
 	}
 	
 	public static void main(String[] args) {
