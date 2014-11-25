@@ -30,7 +30,13 @@ public class CasualPractice {
 		String s = "avs";
 		String p = "bvs";
 		
-		System.out.println(s.compareTo(p));
+		//System.out.println(s.compareTo(p));
+		
+		int aint = -2147483648;
+		
+		long a = (long)aint;
+		
+		System.out.println(a < 0);
 		
 	}
 
