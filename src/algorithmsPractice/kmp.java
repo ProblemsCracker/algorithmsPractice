@@ -1,4 +1,5 @@
-package leetCode;
+package algorithmsPractice;
+
 
 import java.awt.List;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.regex.Pattern;
 
 import com.sun.xml.internal.ws.util.StringUtils;
 
-public class solution {
+public class kmp {
 public static String addBinary(String a, String b) {
         
         StringBuilder sb = new StringBuilder();
